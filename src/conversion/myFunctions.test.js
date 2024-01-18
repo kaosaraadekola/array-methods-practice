@@ -76,10 +76,6 @@ test("are ALL the numbers odd?", () => {
 });
 
 test("are ALL the strings long?", () => {
-    expect(areAllStringsLong(["Charlotte", "Margaret", "Virginia"])).toEqual(
-        true
-    );
-    expect(
-        areAllStringsLong(["Charlotte", "Toni", "Margaret", "Virginia"])
-    ).toEqual(false);
+    expect(areAllStringsLong(["Charlotte", "Margaret", "Virginia"])).toEqual(true);
+    expect(areAllStringsLong(["Charlotte", "Toni", "Margaret", "Virginia"])).toEqual(false);
 });

@@ -52,15 +52,24 @@ function findAllPeopleWithALongName(inputObjects) {}
  * @param {number[]} inputNumbers
  * @return {boolean}
  */
-function areAllNumbersOdd(inputNumbers) {}
+function areAllNumbersOdd(inputNumbers) {
+        const areAllOdd = inputNumbers.every(number => number % 2 !== 0);
+        return areAllOdd;
+    }
 
 /** Given an array of strings of various lengths,
  * return true if all of the strings are "long", else false
  * @param {string[]} inputStrings
  * @returns {boolean}
  * */
-function areAllStringsLong(inputStrings) {}
+function areAllStringsLong(inputStrings) {
+        return inputStrings.every(str => str.length > 7);
+}
 
+/**
+ * the .every method returns true if the call back function  returns true for every element in the array
+ * If the callback returns false for at least one element, then .every returns false.
+ */
 export {
     findFirstLongString,
     findFirstOddNumber,
