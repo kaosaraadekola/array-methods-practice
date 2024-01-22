@@ -7,13 +7,18 @@
  * @param {string[]} inputStrings
  * @return {string|undefined}
  */
-function findFirstLongString(inputStrings) {}
+
+function findFirstLongString(inputStrings) {
+    return inputStrings.find(str => str.length >= 7);
+  }
 
 /** return the first odd number in the given array of numbers, or undefined if none is found.
  * @param {number[]} inputNumbers
  * @return {number|undefined}
  */
-function findFirstOddNumber(inputNumbers) {}
+function findFirstOddNumber(inputNumbers) {
+
+}
 
 /** return the LAST "long" string in the given array of strings, or undefined if none is found.
  * @param {string[]} inputStrings
@@ -39,14 +44,20 @@ function findAllOddNumbers(inputNumbers) {}
  * @param {any[]} inputArray
  * @returns {string[]}
  * */
+
+
 function findAllTheStrings(inputArray) {}
 
 /** Given an array of people objects,
  * return a new array containing only those people objects whose firstName OR secondName (or both) is long.
- * @param {{firstName: string, secondName:string}[]} inputObjects
+ * @param {{firstName: string, secondName:string}[]} 
  * @returns {{firstName: string, secondName:string}[]}
  * */
-function findAllPeopleWithALongName(inputObjects) {}
+function findAllPeopleWithALongName(inputStrings) {
+        return inputStrings.filter(person => 
+            person.firstName.length > 7 || person.secondName.length > 7
+        );
+    }
 
 /** given an array of numbers return true if all of them are odd, else false.
  * @param {number[]} inputNumbers
